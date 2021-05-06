@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'card1.dart';
 import 'card2.dart';
-import 'explore_card.dart';
+import 'card3.dart';
 
 // 1
 class Home extends StatefulWidget {
@@ -40,7 +40,8 @@ class _HomeState extends State<Home> {
         // 4
         bottomNavigationBar: BottomNavigationBar(
             // 5
-            selectedItemColor: Theme.of(context).textSelectionColor,
+            selectedItemColor: Theme.of(context)
+              .textSelectionTheme.selectionColor,
             // 10
             currentIndex: _selectedIndex,
             // 11
